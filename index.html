@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ta Te Ti</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left panel">
+        <div id="players">
+          <label for="player1">Jugador X:</label>
+          <input type="text" class="playerNames" id="player1" name="player1">
+
+          <label for="player2">Jugador O:</label>
+          <input type="text" class="playerNames" id="player2" name="player2">
+          <div class="cont-button">
+            <button id="btnSave">Guardar</button>
+          </div>
+
+          <p id="error" style="color: red; display: none;">Error: Debe completar ambos nombres</p>
+        </div>
+      </div>
+
+      <div class="middle panel">
+        <div id="title">
+          <div class="row">
+            <h1 class="letter titleAmarillo">T</h1>
+            <h1 class="letter titleRojo">I</h1>
+            <h1 class="letter titleAmarillo">C</h1>
+          </div>
+          <div class="row">
+            <h1 class="letter titleRojo">T</h1>
+            <h1 class="letter titleAmarillo">A</h1>
+            <h1 class="letter titleRojo">C</h1>
+          </div>
+          <div class="row">
+            <h1 class="letter titleAmarillo">T</h1>
+            <h1 class="letter titleRojo">O</h1>
+            <h1 class="letter titleAmarillo">E</h1>
+          </div>
+        </div>
+        <div class="cont-board">
+          <div id="board">
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+            <div class="cells"></div>
+          </div>
+        </div>
+        <div class="cont-button">
+          <button id="btnRestart">Volver a jugar</button>
+        </div>
+      </div>
+
+      <div class="right panel">
+        <p id="result"></p>
+        <table>
+          <thead>
+            <tr>
+              <th>Jugador</th>
+              <th>Victorias</th>
+            </tr>
+          </thead>
+          <tbody id="ranking">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
